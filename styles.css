@@ -1,0 +1,472 @@
+/** lg is 992px */
+
+:root {
+  --black: #070708;
+  --red: #b80000;
+}
+
+* {
+  border-radius: 0 !important;
+}
+
+/**
+ * NAVBAR
+ ******************************************************************************/
+
+.navbar#main-nav {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: var(--red);
+}
+
+/**
+ * NEW SECTION (LANÇAMENTOS)
+ ******************************************************************************/
+
+.new {
+  padding-top: 20px;
+  padding-bottom: 3rem;
+  background-color: var(--black);
+  color: #fff;
+}
+
+.new__title {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  font-size: clamp(30px, 4.5vw, 60px);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #fff;
+  font-weight: 100;
+  text-align: center;
+}
+
+.new__iframe-wrapper {
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.new__iframe-wrapper iframe {
+  width: 100%;
+  height: 350px;
+}
+
+.new_details {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.new__film-title {
+  font-size: clamp(23px, 2vw, 30px);
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .new__film-title {
+    font-weight: bold;
+    margin-top: 1rem;
+    font-size: 20px;
+  }
+}
+
+.new__syn {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+.new__row-item {
+  display: flex;
+}
+
+.new__row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  margin-bottom: 0.375rem;
+}
+
+.new__row-label::after {
+  content: ":";
+  margin-right: 5px;
+}
+
+.new__stars i {
+  color: #ffc107;
+}
+
+/**
+ * DESTAQUES
+ ******************************************************************************/
+
+.highlights__header {
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0;
+}
+
+.highlights__title {
+  font-size: clamp(30px, 3vw, 45px);
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.highlights {
+  padding-bottom: 1.5rem;
+  border-top: solid 5px var(--red);
+  border-bottom: solid 5px var(--red);
+}
+
+.highlights__drop button {
+  border-color: black;
+  background-color: black;
+  padding: 0.3rem 0.75rem;
+}
+
+.highlights__film img {
+  height: 370px;
+  width: 245px;
+  border: solid 10px #b80100;
+}
+
+@media screen and (max-width: 992px) {
+  .highlights__film img {
+    margin-bottom: 1rem;
+  }
+}
+
+.highlights__film {
+  text-align: center;
+}
+
+.highlights__film img {
+  transition: all ease-in-out 125ms;
+}
+
+.highlights__film:hover img {
+  transform: scale(1.05) rotate(5deg);
+}
+
+.highlights__film a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+}
+
+.highlights__film-name {
+  font-size: 17px;
+  margin-top: 6px;
+  color: #b80100;
+  text-decoration: underline;
+}
+
+.highlights__footer {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.highlights__footer a {
+  display: inline-block;
+  margin: 1rem;
+  text-decoration: none;
+  background-color: #b80100;
+  border-bottom: solid 3px #990100;
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all linear 150ms;
+}
+
+.highlights__film-name {
+  font-size: 20px;
+  font-weight: 300;
+  margin-bottom: 0.2rem;
+  color: #b80100;
+}
+
+.highlights__film-name:hover {
+  color: #b80100;
+  text-decoration: underline;
+}
+
+.highlights__footer a:hover {
+  background-color: #000;
+  border-bottom-color: #000;
+  color: #fff;
+}
+
+.highlights__film-details span.avg {
+  color: #b80100;
+  padding: 2px;
+  border: solid 1px #b80100;
+}
+
+/**
+ * AVALIAÇÕES
+ ******************************************************************************/
+
+.reviews {
+  background-color: var(--black);
+  color: #fff;
+  padding-bottom: 3rem;
+  border-bottom: solid 5px var(--red);
+}
+
+.reviews__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.reviews__title {
+  font-size: clamp(30px, 3vw, 45px);
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.reviews__review {
+  display: flex;
+  padding-right: 1rem;
+}
+
+@media screen and (max-width: 992px) {
+  .reviews__review {
+    margin-bottom: 1.7rem;
+  }
+}
+
+.reviews__review-avatar img {
+  width: 60px;
+  height: 60px;
+  border: solid 3px var(--red);
+}
+
+.reviews__review-details {
+  border-left: solid 3px var(--red);
+  margin-left: 1rem;
+  padding: 0.375rem 0 0.375rem 1rem;
+  position: relative;
+}
+
+.reviews__review-details h5 {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 0.8rem;
+}
+
+.reviews__review-details p {
+  text-align: justify;
+}
+
+.reviews__review-details footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__review-details::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: transparent;
+  position: absolute;
+  border: solid 10px transparent;
+  border-right-color: var(--red);
+  top: 18px;
+  left: -20px;
+}
+
+.reviews__review-stars i {
+  color: #ffc107;
+}
+
+.reviews__review-details p a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/**
+ * ENTREVISTAS
+ ******************************************************************************/
+
+.interviews__title {
+  font-size: clamp(25px, 2.5vw, 40px);
+  font-weight: 100;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+.interviews {
+  padding: 2rem 0;
+  background-color: var(--red);
+  color: #fff;
+  border-top: solid 5px var(--black);
+  border-bottom: solid 5px var(--black);
+}
+
+.interview__interview-iframe iframe {
+  width: 100%;
+  height: 220px;
+}
+
+.interviews__name,
+.interviews__desc,
+.interviews__interview-row {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .interviews__interview {
+    margin-bottom: 1rem;
+  }
+}
+
+/**
+ * NOVIDADES
+ ******************************************************************************/
+
+.news {
+  padding-top: 1rem;
+}
+
+.news__sect-title {
+  font-weight: 100;
+  font-size: clamp(35px, 3vw, 45px);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.news__item {
+  display: flex;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.news__item:not(:last-child) {
+  border-bottom: solid 1px var(--black);
+  margin-bottom: 1rem;
+}
+
+.news__img img {
+  height: 125px;
+  width: 195px;
+}
+
+.news__img {
+  margin-right: 1.5rem;
+}
+
+.news__roll {
+  margin-top: 2rem;
+}
+
+.news__title {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 24px;
+  letter-spacing: 1px;
+  margin-bottom: 0.5rem;
+}
+
+.news__desc {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+.news__desc a {
+  color: var(--black);
+}
+
+.news__desc a:hover {
+  color: var(--red);
+}
+
+.news__tags span {
+  background-color: var(--red);
+  color: #fff;
+  padding: 4px 10px;
+  margin-right: 0.75rem;
+}
+
+.news__load-more {
+  text-align: right;
+}
+
+.news__load-more a {
+  text-decoration: none;
+  color: #070708;
+  transition: all linear 150ms;
+}
+
+.news__load-more a:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/**
+ * SEÇÃO LATERAL PRÉ-RODAPÉ
+ ******************************************************************************/
+
+.info__sect:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.info__title {
+  font-size: clamp(25px, 2vw, 30px);
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.info {
+  padding: 1rem;
+  text-align: justify;
+}
+
+.social-list a {
+  text-decoration: none;
+  font-size: 40px;
+  color: var(--red);
+}
+
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-list li span::after {
+  content: ":";
+}
+
+/**
+ * RODAPÉ
+ ******************************************************************************/
+
+.pre-footer {
+  border-top: solid 5px var(--red);
+  padding: 2rem;
+}
+
+.site-footer {
+  background-color: var(--black);
+  color: #fff;
+  padding: 2rem;
+}
+
+.site-footer__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}

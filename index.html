@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS & Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Filnews - Portal de Notícias Sobre Filmes</title>
+  </head>
+
+  <body>
+    <div id="root">
+      <!------------------------------------------------------------------------------------------->
+      <!-- NAVBAR                                                                                -->
+      <!------------------------------------------------------------------------------------------->
+      <nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
+        <div class="container">
+          <a class="navbar-brand" href="/"
+            ><span class="__filnews__">Filnews</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#nav-content"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="nav-content">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#lanc">Lançamento</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#dest">Em Destaque</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#aval">Avaliações</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#entr">Entrevistas & Making-of</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#novi">Novidades</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Pesquisar filme..."
+              />
+              <button
+                class="btn btn-outline-light"
+                type="submit"
+                title="Pesquisar"
+              >
+                <i class="bi bi-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!------------------------------------------------------------------------------------------->
+      <!-- LANÇAMENTOS                                                                           -->
+      <!------------------------------------------------------------------------------------------->
+      <section class="new">
+        <div class="container">
+          <h3 class="new__title" id="lanc">Lançamento da Semana</h3>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="new__iframe-wrapper">
+                <!-- <iframe
+                  src="https://www.youtube.com/embed/5SjYFF2g35c"
+                ></iframe> -->
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="new_details">
+                <div class="new__details-inner">
+                  <h4 class="new__film-title">
+                    Animais Fantásticos: Os Segredos de Dumbledore
+                  </h4>
+                  <p class="new__syn">
+                    Animais Fantásticos: Os Segredos de Dumbledore é a sequência
+                    das aventuras de Newt Scamander, um magizoologista que
+                    carrega em sua maleta uma coleção de fantásticos animais do
+                    mundo da magia descoberta em suas viagens. Dessa vez, ele é
+                    convocado por Albus Dumbledore na luta contra o vilão
+                    Grindelwald. A trama mostra por que o célebre bruxo de
+                    Hogwarts, que sabe da busca por controle de Grindelwald e é
+                    incapaz de detê-lo sozinho, confia no magizoologista para
+                    liderar uma equipe de bruxos, bruxas e um bravo padeiro
+                    trouxa em uma missão perigosa. Ao longo do enredo, eles
+                    encontrarão velhos e novos animais fantásticos, além de
+                    enfrentar a crescente legião de seguidores do vilão. Mas o
+                    que o grupo de Scamander não sabe é que Grindelwald colocará
+                    o Mundo Mágico em uma luta contra o mundo dos trouxas.
+                    Enquanto o universo da magia fica mais dividido, Dumbledore
+                    deve decidir por quanto tempo ele ficará à margem da guerra
+                    que se aproxima.
+                  </p>
+                  <div class="new__row">
+                    <div class="new__row-item">
+                      <div class="new__row-label">Direção</div>
+                      David Yates
+                    </div>
+                    <div class="new__row-item">
+                      <div class="new__row-label">Estreia</div>
+                      2022
+                    </div>
+                  </div>
+                  <div class="new__row">
+                    <div class="new__row-item">
+                      <div class="new__row-label">Elenco</div>
+                      Eddie Redmayne, Jude Law, Mads Mikkelsen
+                    </div>
+                  </div>
+                  <div class="new__row">
+                    <div class="new__stars">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star"></i>
+                      <i class="bi bi-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------------------------------------------------------------------------->
+      <!-- DESTAQUES                                                                             -->
+      <!------------------------------------------------------------------------------------------->
+      <section class="highlights">
+        <div class="container">
+          <header class="highlights__header">
+            <h3 class="highlights__title" id="dest">Destaques</h3>
+            <div class="highlights__drop">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  id="highlights-drop"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Destaques da Edição
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="highlights-drop">
+                  <li><a class="dropdown-item" href="#">Clássicos</a></li>
+                  <li><a class="dropdown-item" href="#">Fantasia</a></li>
+                  <li><a class="dropdown-item" href="#">Romance</a></li>
+                </ul>
+              </div>
+            </div>
+          </header>
+
+          <div class="highlights__list">
+            <p>Carregando...</p>
+          </div>
+
+          <footer class="highlights__footer">
+            <a href="javascript:void(0);" id="hl-load-more">Carregar mais...</a>
+          </footer>
+        </div>
+      </section>
+
+      <!------------------------------------------------------------------------------------------->
+      <!-- AS AVALIAÇÕES                                                                         -->
+      <!------------------------------------------------------------------------------------------->
+      <section class="reviews">
+        <div class="container">
+          <header class="reviews__header">
+            <h3 class="reviews__title" id="aval">AVALIAÇÕES</h3>
+          </header>
+
+          <div class="reviews__main">
+            <div class="row">
+              <!-- 1 -->
+              <div class="col-lg-4">
+                <div class="reviews__review">
+                  <div class="reviews__review-avatar">
+                    <img
+                      src="./img/people/isabela-boscov.webp"
+                      alt="Isabela Boscov"
+                    />
+                  </div>
+                  <div class="reviews__review-details">
+                    <h5>Isabela Boscov</h5>
+                    <p>
+                      "<strong
+                        >Animais Fantásticos: Os Segredos de Dumbledore</strong
+                      >" tem problemas, mas ainda é um prazer. Excelente
+                      produção, figurinos e efeitos. Desde o começo, a série vem
+                      enfrentando uma resistência crescente. Eu, todavia, gosto
+                      da série, apesar de compreender as razões de boa parte do
+                      público...
+                      <a href="https://www.youtube.com/watch?v=6UisMf7x6LY"
+                        >(crítica completa)</a
+                      >
+                    </p>
+                    <footer>
+                      <div class="reviews__review-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                      12 de abr. de 2022
+                    </footer>
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="col-lg-4">
+                <div class="reviews__review">
+                  <div class="reviews__review-avatar">
+                    <img
+                      src="./img/people/gui-freire.jpeg"
+                      alt="Isabela Boscov"
+                    />
+                  </div>
+                  <div class="reviews__review-details">
+                    <h5>Guilherme Freire</h5>
+                    <p>
+                      "<strong>Interestrellar</strong>", um dos melhores filmes
+                      dos últimos anos, pode ser sintetizado pelo seu
+                      simbolismo. Conexões frequentes que demonstram a
+                      importância de manter o presente e passado para garantir
+                      um futuro melhor.
+                      <a href="https://www.youtube.com/watch?v=htJ_iuyCKf0"
+                        >(crítica completa)</a
+                      >
+                    </p>
+                    <footer>
+                      <div class="reviews__review-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star"></i>
+                      </div>
+                      26 de nov. de 2020
+                    </footer>
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="col-lg-4">
+                <div class="reviews__review">
+                  <div class="reviews__review-avatar">
+                    <img
+                      src="./img/people/MakeBetterMedia.jpeg"
+                      alt="Isabela Boscov"
+                    />
+                  </div>
+                  <div class="reviews__review-details">
+                    <h5>MakeBetterMedia</h5>
+                    <p>
+                      "<strong>O Show de Truman</strong>" é um filme que, de
+                      modo excepcional, brinca com suas emoções e faz o
+                      telespectador questionar o próprio senso de realidade. É
+                      um filme extremamente bem produzido com excelente
+                      história.
+                      <a href="https://www.youtube.com/watch?v=MAX9qWiJxvU"
+                        >(crítica completa)</a
+                      >
+                    </p>
+                    <footer>
+                      <div class="reviews__review-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </div>
+                      25 de jun. de 2020
+                    </footer>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------------------------------------------------------------------------->
+      <!-- ENTREVISTAS                                                                           -->
+      <!------------------------------------------------------------------------------------------->
+      <section class="interviews">
+        <div class="container">
+          <header class="interviews__header">
+            <h3 class="interviews__title" id="entr">
+              Entrevistas<span class="d-none d-lg-inline">
+                &amp; Making-Of</span
+              >
+            </h3>
+          </header>
+
+          <div class="interviews__list">
+            <div class="row">
+              <!-- 1 -->
+              <div class="col-lg-4">
+                <div class="interviews__interview">
+                  <div class="interview__interview-iframe">
+                    <iframe
+                      src="https://www.youtube.com/embed/HPmb3Al25pM"
+                    ></iframe>
+                  </div>
+                  <div class="interviews__name">O Senhor dos Anéis</div>
+                  <div class="interviews__desc">
+                    Apêndices e entrevistas com elenco e diretor
+                  </div>
+                  <div class="interviews__interview-row">
+                    <span>Diretor</span> Peter Jackson
+                  </div>
+                </div>
+              </div>
+              <!-- 2 -->
+              <div class="col-lg-4">
+                <div class="interviews__interview">
+                  <div class="interview__interview-iframe">
+                    <iframe
+                      src="https://www.youtube.com/embed/GfV0gzcdaVs"
+                    ></iframe>
+                  </div>
+                  <div class="interviews__name">Interestrellar</div>
+                  <div class="interviews__desc">
+                    Entrevista com Matthew McConaughey
+                  </div>
+                  <div class="interviews__interview-row">
+                    <span>Diretor</span> Christopher Nolan
+                  </div>
+                </div>
+              </div>
+              <!-- 3 -->
+              <div class="col-lg-4">
+                <div class="interviews__interview">
+                  <div class="interview__interview-iframe">
+                    <iframe
+                      src="https://www.youtube.com/embed/RqnwuPIsiHA"
+                    ></iframe>
+                  </div>
+                  <div class="interviews__name">O Show de Truman</div>
+                  <div class="interviews__desc">
+                    Entrevista com Jim Carrey e Peter Weir
+                  </div>
+                  <div class="interviews__interview-row">
+                    <span>Diretor</span> Peter Weir
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!------------------------------------------------------------------------------------------->
+      <!-- PRÉ-RODAPÉ                                                                            -->
+      <!------------------------------------------------------------------------------------------->
+      <div class="pre-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <!----------------------------------------------------------------------------------->
+              <!-- NOVIDADES                                                                     -->
+              <!----------------------------------------------------------------------------------->
+              <section class="news">
+                <h3 class="news__sect-title" id="novi">Novidades & Vídeos</h3>
+                <div class="news__roll">
+                  <!-- 1 -->
+                  <div class="news__item">
+                    <div class="news__img">
+                      <img
+                        src="./img/news/as-crises-do-oscar.webp"
+                        alt="As Crises do Óscar"
+                      />
+                    </div>
+                    <div class="news__data">
+                      <h5 class="news__title">As Crises do Óscar</h5>
+                      <p class="news__desc">
+                        Miopia, preconceito, falta de curiosidade: os vícios da
+                        Academia. Veja Isabela Boscov discutir sobre problemas
+                        recentes envolvendo o famigerado evento da Premiação
+                        Acadêmica Óscar.
+                        <a href="https://www.youtube.com/watch?v=RiMtunnuZt0"
+                          >(clique para assistir)</a
+                        >
+                      </p>
+                      <div class="news__tags">
+                        <span>óscar</span>
+                        <span>análises</span>
+                        <span>vídeo</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 2 -->
+                  <div class="news__item">
+                    <div class="news__img">
+                      <img
+                        src="./img/news/mud-dc.webp"
+                        alt="Grandes Mudanças na DC"
+                      />
+                    </div>
+                    <div class="news__data">
+                      <h5 class="news__title">Grandes Mudanças na DC</h5>
+                      <p class="news__desc">
+                        Finalmente aconteceu da Warner ser assumida pela
+                        Discovery e parte do sucesso dessa fusão será a DC
+                        atingir todo seu potencial, tanto no cinema, quanto no
+                        streaming. Segundo a Variety os novos executivos da WB
+                        Discovery apoiados por David Zaslav, o CEO da empresa,
+                        planejam muitas mudanças no processo criativo da DC no
+                        que se refere a seus filmes.
+                        <a href="https://www.youtube.com/watch?v=FbjXuHrSU_s"
+                          >(clique para assistir)</a
+                        >
+                      </p>
+                      <div class="news__tags">
+                        <span>dc</span>
+                        <span>notícia</span>
+                        <span>vídeo</span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 3 -->
+                  <div class="news__item">
+                    <div class="news__img">
+                      <img
+                        src="./img/news/crit-fa.webp"
+                        alt="Grandes Mudanças na DC"
+                      />
+                    </div>
+                    <div class="news__data">
+                      <h5 class="news__title">
+                        Crítica - Os Segredos de Dumbledore
+                      </h5>
+                      <p class="news__desc">
+                        O professor Alvo Dumbledore sabe que o poderoso mago das
+                        trevas, Grindelwald está se movimentando para assumir o
+                        controle do mundo mágico. Incapaz de detê-lo sozinho,
+                        ele constrói um time liderado por Newt Scamander em uma
+                        missão perigosa e decisiva para o mundo dos mágicos e
+                        dos trouxas. Essa é a sinopse de “Animais Fantásticos 3:
+                        Os Segredos de Dumbledore”, filme dirigido por David
+                        Yates, com JK Rowling e Steve Kloves no roteiro.
+                        <a href="https://www.youtube.com/watch?v=OpzlLyaVYRE"
+                          >(clique para assistir)</a
+                        >
+                      </p>
+                      <div class="news__tags">
+                        <span>crítica</span>
+                        <span>vídeo</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="news__load-more">
+                    <a href="#">Carregar mais...</a>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-lg-4">
+              <!----------------------------------------------------------------------------------->
+              <!-- INFORMAÇÃO                                                                    -->
+              <!----------------------------------------------------------------------------------->
+              <aside class="info">
+                <section class="info__sect">
+                  <h4 class="info__title">Sobre</h4>
+                  <p class="info__text">
+                    O portal de filmes e notícias <strong>Filnews</strong> foi
+                    desenvolvido em 2022 com o objetivo de agregar informações
+                    relacionadas à indústria cinematográfica mundial. Além
+                    disso, a cada edição, seleciona os melhores e mais clássicos
+                    filmes.
+                  </p>
+                </section>
+                <section class="info__sect">
+                  <h4 class="info__title">Editorial</h4>
+                  <ul class="edit-list">
+                    <li>
+                      <i class="bi bi-code-slash"></i>
+                      <span>Desenvolvimento</span>
+                      <strong>Luiz Felipe Gonçalves</strong>
+                    </li>
+                    <li>
+                      <i class="bi bi-person"></i>
+                      <span>Redação</span> Ana Beltrana
+                    </li>
+                    <li>
+                      <i class="bi bi-person"></i>
+                      <span>Pesquisa</span> Bernardo Ciclano
+                    </li>
+                    <li>
+                      <i class="bi bi-person"></i>
+                      <span>Gerente-geral</span> César Deltrano
+                    </li>
+                  </ul>
+                </section>
+                <section class="info__sect">
+                  <section class="info__title">Social</section>
+                  <div class="social-list">
+                    <a href="#">
+                      <i class="bi bi-facebook"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bi bi-instagram"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bi bi-tiktok"></i>
+                    </a>
+                    <a href="#">
+                      <i class="bi bi-twitter"></i>
+                    </a>
+                  </div>
+                </section>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!------------------------------------------------------------------------------------------->
+      <!-- RODAPÉ                                                                                -->
+      <!------------------------------------------------------------------------------------------->
+      <footer class="site-footer">
+        <div class="container">
+          <div class="site-footer__inner">
+            <p class="mb-0">
+              Copyright &copy; 2022, Filnews &middot; Disciplina de
+              Desenvolvimento de Interfaces Web.
+              <br />
+              Desenvolvimento por Luiz Felipe Gonçalves.
+              <br />
+              <strong>ICEI PUC Minas.</strong>
+            </p>
+            <div>
+              <span class="__filnews__">Filnews</span>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end -->
+    </div>
+
+    <script type="module" src="./index.js"></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

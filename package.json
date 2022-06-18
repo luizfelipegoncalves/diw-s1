@@ -1,0 +1,14 @@
+{
+  "type": "module",
+  "name": "filmes-proj",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "scripts": {
+    "fmt": "prettier --write .",
+    "compress": "zip -r out.zip index.html styles.css img/*"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2"
+  }
+}

@@ -6,7 +6,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "fmt": "prettier --write .",
-    "compress": "zip -r out.zip index.html styles.css img/*"
+    "compress": "zip -r diw-luiz-felipe-goncalves.zip *.{html,css,js,md,txt} img/*"
   },
   "devDependencies": {
     "prettier": "^2.6.2"

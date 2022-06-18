@@ -28,8 +28,6 @@ async function main() {
     throw new Error(data.status_message);
   }
 
-  console.log(data);
-
   const posterUrl = catUri(POSTER_BASE, data.poster_path);
   const bannerUrl = catUri(BANNER_BASE, data.backdrop_path);
 

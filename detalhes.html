@@ -58,9 +58,10 @@
                 <a class="nav-link" href="/#novi">Novidades</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex" method="GET" action="./pesquisa">
               <input
                 class="form-control me-2"
+                name="query"
                 type="search"
                 placeholder="Pesquisar filme..."
               />
@@ -80,7 +81,9 @@
         <!----------------------------------------------------------------------------------------->
         <!-- DETALHES                                                                            -->
         <!----------------------------------------------------------------------------------------->
-        <div id="details">Carregando...</div>
+        <div id="details">
+          <div class="loading-msg">Carregando...</div>
+        </div>
       </div>
 
       <!------------------------------------------------------------------------------------------->

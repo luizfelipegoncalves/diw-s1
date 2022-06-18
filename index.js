@@ -33,7 +33,6 @@ async function initHighlights() {
 
 async function highlightRow() {
   const els = await loadCountedHighlights(4);
-  console.log(els);
 
   function mapHighlight(entry) {
     return highlight({

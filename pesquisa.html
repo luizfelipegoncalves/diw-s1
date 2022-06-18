@@ -58,9 +58,10 @@
                 <a class="nav-link" href="/#novi">Novidades</a>
               </li>
             </ul>
-            <form class="d-flex">
+            <form class="d-flex" method="GET" action="./pesquisa">
               <input
                 class="form-control me-2"
+                name="query"
                 type="search"
                 placeholder="Pesquisar filme..."
               />
@@ -76,11 +77,36 @@
         </div>
       </nav>
 
-      <div class="middle-sect">
-        <!----------------------------------------------------------------------------------------->
-        <!-- DETALHES                                                                            -->
-        <!----------------------------------------------------------------------------------------->
-        <div id="details">Carregando...</div>
+      <div class="middle-sect py-4">
+        <div class="container" id="query-form-wrapper">
+          <form action="./pesquisa" class="form-display" method="GET">
+            <input type="text" name="query" id="query-input" />
+            <button type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+
+        <!------------------------------------------------------------------------------------------->
+        <!-- DESTAQUES DA BUSCA                                                                    -->
+        <!------------------------------------------------------------------------------------------->
+        <section class="search-hl">
+          <div class="container">
+            <header class="highlights__header">
+              <h3 class="highlights__title" id="dest">Resultados da Busca</h3>
+            </header>
+
+            <div class="highlights__list">
+              <p>Carregando...</p>
+            </div>
+
+            <footer class="highlights__footer">
+              <a href="javascript:void(0);" id="hl-load-more"
+                >Carregar mais...</a
+              >
+            </footer>
+          </div>
+        </section>
       </div>
 
       <!------------------------------------------------------------------------------------------->

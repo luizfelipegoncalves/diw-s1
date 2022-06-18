@@ -57,5 +57,5 @@ export function createCountedLoader(loaderFn) {
 }
 
 export function catUri(...segments) {
-  return segments.map((segment) => segment.replace(/^\/+/g, "")).join("/");
+  return segments.map((segment) => segment?.replace(/^\/+/g, "")).join("/");
 }

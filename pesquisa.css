@@ -1,0 +1,13 @@
+body,
+#root {
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+#root .middle-sect {
+  flex-grow: 1;
+}

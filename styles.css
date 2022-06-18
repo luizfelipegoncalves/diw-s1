@@ -470,3 +470,57 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+
+/**
+ * FORM BUSCAR
+ ******************************************************************************/
+
+.index-search-wrapper {
+  border-top: solid 5px var(--red);
+}
+
+.form-display *,
+.form-display *:focus {
+  appearance: none;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+.form-display {
+  border: solid 3px #b70200;
+  background-color: #ffffff;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.form-display:focus-within {
+  background-color: #fff;
+  box-shadow: rgb(183 2 0 / 65%) 0px 0px 0px 4px;
+}
+
+.form-display button {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  background-color: #b70200;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+  margin: 0.5rem;
+  position: relative;
+  z-index: 9;
+}
+
+.form-display button:hover,
+.form-display button:focus {
+  background-color: #8e0200;
+}
+
+.form-display input {
+  width: 100%;
+  display: inline-block;
+  font-size: 23px;
+  padding: 18px;
+}

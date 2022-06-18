@@ -12,6 +12,13 @@ body,
   flex-grow: 1;
 }
 
+.loading-msg {
+  color: #fff;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 22px;
+}
+
 .poster-banner {
   height: 400px;
   background-size: 100% 100%;

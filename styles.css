@@ -122,7 +122,7 @@
 
 .highlights {
   padding-bottom: 1.5rem;
-  border-top: solid 5px var(--red);
+  /* border-top: solid 5px var(--red); */
   border-bottom: solid 5px var(--red);
 }
 
